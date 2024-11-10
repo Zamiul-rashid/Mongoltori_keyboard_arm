@@ -18,7 +18,7 @@ A computer vision project utilizing YOLO and real-time keyboard detection method
 ## Installation
 
 ### 1. Setting up the Environment
-First, install Anaconda by following the guide in [Anaconda_guide](data/Setting_up_Anaconda_env_paddleOCR)
+First, install Anaconda by following the guide in [Anaconda_guide](data/Setting_up_Anaconda_env_paddleOCR.md)
 
 ### 2. YOLO Installation
 Install YOLO by following the instructions in [YOLO_guide](data/Yolo_guide.md)
