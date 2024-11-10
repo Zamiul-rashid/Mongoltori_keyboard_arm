@@ -4,10 +4,10 @@
 A computer vision project utilizing YOLO and real-time keyboard detection methods. This project combines object detection and custom OCR techniques for keyboard analysis.
 
 ## Team
-- Reshad
-- Sammam
-- Zamiul
+- Reshad - Sammam
+- Zamiul - Rudro
 - Fahim
+  
 
 ## Prerequisites
 - Python 3.x
