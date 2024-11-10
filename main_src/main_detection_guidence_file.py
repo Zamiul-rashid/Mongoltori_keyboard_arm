@@ -6,7 +6,7 @@ from collections import deque
 from pynput import keyboard
 
 # Check if MPS is available (for macOS) and set it as the device, otherwise use CPU
-device = torch.device("mps") if torch.backends.mps.is_available() else torch.device("cpu")
+device = torch.device("cuda") if torch.backends.cuda.is_available() else torch.device("cpu") # use mps for mac M series of proccesors
 print(f"Using device: {device}")
 
 # Load the YOLO model
