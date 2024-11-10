@@ -1,0 +1,9 @@
+name: PaddleOCR
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - matplotlib
+  - numpy
+  - conda-forge::opencv
+prefix: /home/entropy/anaconda3/envs/PaddleOCR
