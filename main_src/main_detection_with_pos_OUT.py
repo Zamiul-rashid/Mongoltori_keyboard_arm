@@ -4,14 +4,14 @@ import cv2
 import numpy as np
 from collections import deque
 from pynput import keyboard
+import json
 
 # Check if CUDA is available, otherwise use CPU
 # device = torch.device("cuda") if torch.backends.cuda.is_available() else torch.device("cpu")
 # print(f"Using device: {device}")
 
 # Load the YOLO model
-model = YOLO(r"Mongoltori_keyboard_arm\YOLO_Training and models\pt_files\keyboard_detection_model.pt")
-
+model = YOLO(r"/home/Mongoltori_keyboard_arm/YOLO_Training and models/pt_files/keyboard_detection_model.pt")
 # Rolling average setup for angle smoothing
 angle_buffer = deque(maxlen=5)
 
@@ -243,7 +243,7 @@ def nothing(x):
 
 def main():
     # Initialize camera
-    cap = cv2.VideoCapture(1)  # Try 0 if 1 doesn't work
+    cap = cv2.VideoCapture(0)  # Try 0 if 1 doesn't work
     if not cap.isOpened():
         print("Error: Could not open camera")
         return
@@ -342,17 +342,58 @@ def main():
         resized_overlay = cv2.resize(overlay, (target_width, target_height))
         mask = np.zeros((frame.shape[0], frame.shape[1], 4), dtype=np.uint8)
         mask[y_offset:y_offset + target_height, x_offset:x_offset + target_width] = resized_overlay
+        key_list = ['U',"R","C"] #Lunch code in 
+        # Print coordinates for specified keys in key_list
 
+        print("\nKey Positions:")
+        for key in key_list:
+            if key in key_positions:
+                pos = key_positions[key]
+                print(f"Key {key}: Absolute ({pos['abs_x']}, {pos['abs_y']}), Relative ({pos['rel_x']}, {pos['rel_y']})")
+            else:
+                print(f"Key {key} not found in keyboard layout")
+            
         # Draw key positions and coordinates
         for key, pos in key_positions.items():
-            # Draw key center point
+            # Draw key Scenter point
             cv2.circle(frame, (pos['abs_x'], pos['abs_y']), 2, (0, 0, 255), -1)
-            
             # Display relative coordinates for specific keys
-            if key in ['ESC', 'ENTER', 'SPACE']:  # Show only some keys to avoid cluttering
+            if key in key_list:
                 cv2.putText(frame, f"({pos['rel_x']}, {pos['rel_y']})", 
-                           (pos['abs_x'], pos['abs_y'] - 5),
-                           cv2.FONT_HERSHEY_SIMPLEX, 0.3, (255, 255, 255), 1)
+                   (pos['abs_x'], pos['abs_y'] - 5),
+                   cv2.FONT_HERSHEY_SIMPLEX, 0.3, (0, 0, 255), 1)
+
+        # Track current key and remove pressed keys
+        for key in keyboard_overlay.pressed_keys.copy():
+            if key in key_list:
+                key_list.remove(key)
+                break
+        # Show task completion message if all keys pressed        
+        if len(key_list) == 0:
+            cv2.putText(frame, "Task Complete!", (10, frame.shape[0] - 30),
+                   cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+        else:
+            # Show instruction for next key
+            target_key = key_list[0]  # Only look at the first key in the list
+            if target_key in key_positions:
+                pos = key_positions[target_key]
+                instruction = f"Press {target_key}"
+                cv2.putText(frame, instruction, (10, frame.shape[0] - 30),
+                       cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+                
+                # Draw arrow from center to target key
+                cv2.arrowedLine(frame, 
+                    (frame.shape[1]//2, frame.shape[0]//2),
+                    (pos['abs_x'], pos['abs_y']),
+                    (0, 255, 0), 2)
+                
+                # Highlight current target key
+                cv2.circle(frame, (pos['abs_x'], pos['abs_y']),
+                      10, (0, 255, 0), 2)
+            else:
+                instruction = f"Key {target_key} not found in keyboard layout"
+                cv2.putText(frame, instruction, (10, frame.shape[0] - 30),
+                       cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
 
         # Apply overlay with opacity
         mask_alpha = mask[:, :, 3] / 255.0
