@@ -1,0 +1,50 @@
+{
+    "frame_center": {
+        "x": 640,
+        "y": 360
+    },
+    "key_positions": {
+        "U": {
+            "absolute_position": {
+                "x": 659,
+                "y": 313
+            },
+            "relative_position": {
+                "x": 19,
+                "y": -47
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "R": {
+            "absolute_position": {
+                "x": 458,
+                "y": 313
+            },
+            "relative_position": {
+                "x": -182,
+                "y": -47
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "C": {
+            "absolute_position": {
+                "x": 433,
+                "y": 447
+            },
+            "relative_position": {
+                "x": -207,
+                "y": 87
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        }
+    }
+}

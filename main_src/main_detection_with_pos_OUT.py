@@ -5,13 +5,14 @@ import numpy as np
 from collections import deque
 from pynput import keyboard
 import json
+import os
 
 # Check if CUDA is available, otherwise use CPU
 # device = torch.device("cuda") if torch.backends.cuda.is_available() else torch.device("cpu")
 # print(f"Using device: {device}")
 
 # Load the YOLO model
-model = YOLO(r"/home/Mongoltori_keyboard_arm/YOLO_Training and models/pt_files/keyboard_detection_model.pt")
+model = YOLO(r"YOLO_Training and models/pt_files/keyboard_detection_model.pt")
 # Rolling average setup for angle smoothing
 angle_buffer = deque(maxlen=5)
 
@@ -367,7 +368,7 @@ def main():
         for key in keyboard_overlay.pressed_keys.copy():
             if key in key_list:
                 key_list.remove(key)
-                break
+                # break
         # Show task completion message if all keys pressed        
         if len(key_list) == 0:
             cv2.putText(frame, "Task Complete!", (10, frame.shape[0] - 30),
@@ -391,10 +392,47 @@ def main():
                 cv2.circle(frame, (pos['abs_x'], pos['abs_y']),
                       10, (0, 255, 0), 2)
             else:
-                instruction = f"Key {target_key} not found in keyboard layout"
-                cv2.putText(frame, instruction, (10, frame.shape[0] - 30),
-                       cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
-
+                    instruction = f"Key {target_key} not found in keyboard layout"
+                    cv2.putText(frame, instruction, (10, frame.shape[0] - 30),
+                           cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+    
+            # Save key_list positions to JSON file
+            json_data = {
+                'frame_center': {
+                    'x': frame.shape[1]//2,
+                    'y': frame.shape[0]//2
+                },
+                'key_positions': {}
+            }
+    
+            # Only save positions for keys in key_list
+            for key in key_list:
+                if key in key_positions:
+                    pos = key_positions[key]
+                    json_data['key_positions'][key] = {
+                        'absolute_position': {
+                            'x': pos['abs_x'],
+                            'y': pos['abs_y']
+                        },
+                        'relative_position': {
+                            'x': pos['rel_x'],
+                            'y': pos['rel_y']
+                        },
+                        'dimensions': {
+                            'width': pos['width'], 
+                            'height': pos['height']
+                        }
+                    }
+    
+            # Use os.path for cross-platform path handling
+            model_dir = os.path.join('main_src')
+            if not os.path.exists(model_dir):
+                os.makedirs(model_dir)
+            
+            json_path = os.path.join(model_dir, 'keyboard_positions.json')
+            with open(json_path, 'w') as f:
+                json.dump(json_data, f, indent=4)
+                print(f"Saved key_list positions to {json_path}")
         # Apply overlay with opacity
         mask_alpha = mask[:, :, 3] / 255.0
         for c in range(3):

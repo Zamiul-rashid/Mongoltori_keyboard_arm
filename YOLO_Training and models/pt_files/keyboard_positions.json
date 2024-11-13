@@ -1,0 +1,1030 @@
+{
+    "frame_center": {
+        "x": 640,
+        "y": 360
+    },
+    "key_positions": {
+        "ESC": {
+            "absolute_position": {
+                "x": 162,
+                "y": 185
+            },
+            "relative_position": {
+                "x": -478,
+                "y": -175
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 44
+            }
+        },
+        "F1": {
+            "absolute_position": {
+                "x": 229,
+                "y": 185
+            },
+            "relative_position": {
+                "x": -411,
+                "y": -175
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 44
+            }
+        },
+        "F2": {
+            "absolute_position": {
+                "x": 296,
+                "y": 185
+            },
+            "relative_position": {
+                "x": -344,
+                "y": -175
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 44
+            }
+        },
+        "F3": {
+            "absolute_position": {
+                "x": 363,
+                "y": 185
+            },
+            "relative_position": {
+                "x": -277,
+                "y": -175
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 44
+            }
+        },
+        "F4": {
+            "absolute_position": {
+                "x": 430,
+                "y": 185
+            },
+            "relative_position": {
+                "x": -210,
+                "y": -175
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 44
+            }
+        },
+        "F5": {
+            "absolute_position": {
+                "x": 497,
+                "y": 185
+            },
+            "relative_position": {
+                "x": -143,
+                "y": -175
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 44
+            }
+        },
+        "F6": {
+            "absolute_position": {
+                "x": 564,
+                "y": 185
+            },
+            "relative_position": {
+                "x": -76,
+                "y": -175
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 44
+            }
+        },
+        "F7": {
+            "absolute_position": {
+                "x": 631,
+                "y": 185
+            },
+            "relative_position": {
+                "x": -9,
+                "y": -175
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 44
+            }
+        },
+        "F8": {
+            "absolute_position": {
+                "x": 698,
+                "y": 185
+            },
+            "relative_position": {
+                "x": 58,
+                "y": -175
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 44
+            }
+        },
+        "F9": {
+            "absolute_position": {
+                "x": 765,
+                "y": 185
+            },
+            "relative_position": {
+                "x": 125,
+                "y": -175
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 44
+            }
+        },
+        "F10": {
+            "absolute_position": {
+                "x": 832,
+                "y": 185
+            },
+            "relative_position": {
+                "x": 192,
+                "y": -175
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 44
+            }
+        },
+        "F11": {
+            "absolute_position": {
+                "x": 899,
+                "y": 185
+            },
+            "relative_position": {
+                "x": 259,
+                "y": -175
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 44
+            }
+        },
+        "F12": {
+            "absolute_position": {
+                "x": 966,
+                "y": 185
+            },
+            "relative_position": {
+                "x": 326,
+                "y": -175
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 44
+            }
+        },
+        "GRAVE": {
+            "absolute_position": {
+                "x": 162,
+                "y": 246
+            },
+            "relative_position": {
+                "x": -478,
+                "y": -114
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "1": {
+            "absolute_position": {
+                "x": 229,
+                "y": 246
+            },
+            "relative_position": {
+                "x": -411,
+                "y": -114
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "2": {
+            "absolute_position": {
+                "x": 296,
+                "y": 246
+            },
+            "relative_position": {
+                "x": -344,
+                "y": -114
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "3": {
+            "absolute_position": {
+                "x": 363,
+                "y": 246
+            },
+            "relative_position": {
+                "x": -277,
+                "y": -114
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "4": {
+            "absolute_position": {
+                "x": 430,
+                "y": 246
+            },
+            "relative_position": {
+                "x": -210,
+                "y": -114
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "5": {
+            "absolute_position": {
+                "x": 497,
+                "y": 246
+            },
+            "relative_position": {
+                "x": -143,
+                "y": -114
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "6": {
+            "absolute_position": {
+                "x": 564,
+                "y": 246
+            },
+            "relative_position": {
+                "x": -76,
+                "y": -114
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "7": {
+            "absolute_position": {
+                "x": 631,
+                "y": 246
+            },
+            "relative_position": {
+                "x": -9,
+                "y": -114
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "8": {
+            "absolute_position": {
+                "x": 698,
+                "y": 246
+            },
+            "relative_position": {
+                "x": 58,
+                "y": -114
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "9": {
+            "absolute_position": {
+                "x": 765,
+                "y": 246
+            },
+            "relative_position": {
+                "x": 125,
+                "y": -114
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "0": {
+            "absolute_position": {
+                "x": 832,
+                "y": 246
+            },
+            "relative_position": {
+                "x": 192,
+                "y": -114
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "MINUS": {
+            "absolute_position": {
+                "x": 899,
+                "y": 246
+            },
+            "relative_position": {
+                "x": 259,
+                "y": -114
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "EQUALS": {
+            "absolute_position": {
+                "x": 966,
+                "y": 246
+            },
+            "relative_position": {
+                "x": 326,
+                "y": -114
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "BACKSPACE": {
+            "absolute_position": {
+                "x": 1061,
+                "y": 246
+            },
+            "relative_position": {
+                "x": 421,
+                "y": -114
+            },
+            "dimensions": {
+                "width": 112,
+                "height": 56
+            }
+        },
+        "TAB": {
+            "absolute_position": {
+                "x": 176,
+                "y": 313
+            },
+            "relative_position": {
+                "x": -464,
+                "y": -47
+            },
+            "dimensions": {
+                "width": 84,
+                "height": 56
+            }
+        },
+        "Q": {
+            "absolute_position": {
+                "x": 257,
+                "y": 313
+            },
+            "relative_position": {
+                "x": -383,
+                "y": -47
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "W": {
+            "absolute_position": {
+                "x": 324,
+                "y": 313
+            },
+            "relative_position": {
+                "x": -316,
+                "y": -47
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "E": {
+            "absolute_position": {
+                "x": 391,
+                "y": 313
+            },
+            "relative_position": {
+                "x": -249,
+                "y": -47
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "R": {
+            "absolute_position": {
+                "x": 458,
+                "y": 313
+            },
+            "relative_position": {
+                "x": -182,
+                "y": -47
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "T": {
+            "absolute_position": {
+                "x": 525,
+                "y": 313
+            },
+            "relative_position": {
+                "x": -115,
+                "y": -47
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "Y": {
+            "absolute_position": {
+                "x": 592,
+                "y": 313
+            },
+            "relative_position": {
+                "x": -48,
+                "y": -47
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "U": {
+            "absolute_position": {
+                "x": 659,
+                "y": 313
+            },
+            "relative_position": {
+                "x": 19,
+                "y": -47
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "I": {
+            "absolute_position": {
+                "x": 726,
+                "y": 313
+            },
+            "relative_position": {
+                "x": 86,
+                "y": -47
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "O": {
+            "absolute_position": {
+                "x": 793,
+                "y": 313
+            },
+            "relative_position": {
+                "x": 153,
+                "y": -47
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "P": {
+            "absolute_position": {
+                "x": 860,
+                "y": 313
+            },
+            "relative_position": {
+                "x": 220,
+                "y": -47
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "LEFT_BRACKET": {
+            "absolute_position": {
+                "x": 927,
+                "y": 313
+            },
+            "relative_position": {
+                "x": 287,
+                "y": -47
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "RIGHT_BRACKET": {
+            "absolute_position": {
+                "x": 994,
+                "y": 313
+            },
+            "relative_position": {
+                "x": 354,
+                "y": -47
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "BACKSLASH": {
+            "absolute_position": {
+                "x": 1061,
+                "y": 313
+            },
+            "relative_position": {
+                "x": 421,
+                "y": -47
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "CAPS_LOCK": {
+            "absolute_position": {
+                "x": 183,
+                "y": 380
+            },
+            "relative_position": {
+                "x": -457,
+                "y": 20
+            },
+            "dimensions": {
+                "width": 98,
+                "height": 56
+            }
+        },
+        "A": {
+            "absolute_position": {
+                "x": 271,
+                "y": 380
+            },
+            "relative_position": {
+                "x": -369,
+                "y": 20
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "S": {
+            "absolute_position": {
+                "x": 338,
+                "y": 380
+            },
+            "relative_position": {
+                "x": -302,
+                "y": 20
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "D": {
+            "absolute_position": {
+                "x": 405,
+                "y": 380
+            },
+            "relative_position": {
+                "x": -235,
+                "y": 20
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "F": {
+            "absolute_position": {
+                "x": 472,
+                "y": 380
+            },
+            "relative_position": {
+                "x": -168,
+                "y": 20
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "G": {
+            "absolute_position": {
+                "x": 539,
+                "y": 380
+            },
+            "relative_position": {
+                "x": -101,
+                "y": 20
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "H": {
+            "absolute_position": {
+                "x": 606,
+                "y": 380
+            },
+            "relative_position": {
+                "x": -34,
+                "y": 20
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "J": {
+            "absolute_position": {
+                "x": 673,
+                "y": 380
+            },
+            "relative_position": {
+                "x": 33,
+                "y": 20
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "K": {
+            "absolute_position": {
+                "x": 740,
+                "y": 380
+            },
+            "relative_position": {
+                "x": 100,
+                "y": 20
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "L": {
+            "absolute_position": {
+                "x": 807,
+                "y": 380
+            },
+            "relative_position": {
+                "x": 167,
+                "y": 20
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "SEMICOLON": {
+            "absolute_position": {
+                "x": 874,
+                "y": 380
+            },
+            "relative_position": {
+                "x": 234,
+                "y": 20
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "QUOTE": {
+            "absolute_position": {
+                "x": 941,
+                "y": 380
+            },
+            "relative_position": {
+                "x": 301,
+                "y": 20
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "ENTER": {
+            "absolute_position": {
+                "x": 1043,
+                "y": 380
+            },
+            "relative_position": {
+                "x": 403,
+                "y": 20
+            },
+            "dimensions": {
+                "width": 126,
+                "height": 56
+            }
+        },
+        "LEFT_SHIFT": {
+            "absolute_position": {
+                "x": 197,
+                "y": 447
+            },
+            "relative_position": {
+                "x": -443,
+                "y": 87
+            },
+            "dimensions": {
+                "width": 126,
+                "height": 56
+            }
+        },
+        "Z": {
+            "absolute_position": {
+                "x": 299,
+                "y": 447
+            },
+            "relative_position": {
+                "x": -341,
+                "y": 87
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "X": {
+            "absolute_position": {
+                "x": 366,
+                "y": 447
+            },
+            "relative_position": {
+                "x": -274,
+                "y": 87
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "C": {
+            "absolute_position": {
+                "x": 433,
+                "y": 447
+            },
+            "relative_position": {
+                "x": -207,
+                "y": 87
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "V": {
+            "absolute_position": {
+                "x": 500,
+                "y": 447
+            },
+            "relative_position": {
+                "x": -140,
+                "y": 87
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "B": {
+            "absolute_position": {
+                "x": 567,
+                "y": 447
+            },
+            "relative_position": {
+                "x": -73,
+                "y": 87
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "N": {
+            "absolute_position": {
+                "x": 634,
+                "y": 447
+            },
+            "relative_position": {
+                "x": -6,
+                "y": 87
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "M": {
+            "absolute_position": {
+                "x": 701,
+                "y": 447
+            },
+            "relative_position": {
+                "x": 61,
+                "y": 87
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "COMMA": {
+            "absolute_position": {
+                "x": 768,
+                "y": 447
+            },
+            "relative_position": {
+                "x": 128,
+                "y": 87
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "PERIOD": {
+            "absolute_position": {
+                "x": 835,
+                "y": 447
+            },
+            "relative_position": {
+                "x": 195,
+                "y": 87
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "SLASH": {
+            "absolute_position": {
+                "x": 902,
+                "y": 447
+            },
+            "relative_position": {
+                "x": 262,
+                "y": 87
+            },
+            "dimensions": {
+                "width": 56,
+                "height": 56
+            }
+        },
+        "RIGHT_SHIFT": {
+            "absolute_position": {
+                "x": 1004,
+                "y": 447
+            },
+            "relative_position": {
+                "x": 364,
+                "y": 87
+            },
+            "dimensions": {
+                "width": 126,
+                "height": 56
+            }
+        },
+        "LEFT_CTRL": {
+            "absolute_position": {
+                "x": 176,
+                "y": 514
+            },
+            "relative_position": {
+                "x": -464,
+                "y": 154
+            },
+            "dimensions": {
+                "width": 84,
+                "height": 56
+            }
+        },
+        "LEFT_WIN": {
+            "absolute_position": {
+                "x": 264,
+                "y": 514
+            },
+            "relative_position": {
+                "x": -376,
+                "y": 154
+            },
+            "dimensions": {
+                "width": 70,
+                "height": 56
+            }
+        },
+        "LEFT_ALT": {
+            "absolute_position": {
+                "x": 345,
+                "y": 514
+            },
+            "relative_position": {
+                "x": -295,
+                "y": 154
+            },
+            "dimensions": {
+                "width": 70,
+                "height": 56
+            }
+        },
+        "SPACE": {
+            "absolute_position": {
+                "x": 567,
+                "y": 514
+            },
+            "relative_position": {
+                "x": -73,
+                "y": 154
+            },
+            "dimensions": {
+                "width": 352,
+                "height": 56
+            }
+        },
+        "RIGHT_ALT": {
+            "absolute_position": {
+                "x": 789,
+                "y": 514
+            },
+            "relative_position": {
+                "x": 149,
+                "y": 154
+            },
+            "dimensions": {
+                "width": 70,
+                "height": 56
+            }
+        },
+        "FN": {
+            "absolute_position": {
+                "x": 870,
+                "y": 514
+            },
+            "relative_position": {
+                "x": 230,
+                "y": 154
+            },
+            "dimensions": {
+                "width": 70,
+                "height": 56
+            }
+        },
+        "RIGHT_CTRL": {
+            "absolute_position": {
+                "x": 958,
+                "y": 514
+            },
+            "relative_position": {
+                "x": 318,
+                "y": 154
+            },
+            "dimensions": {
+                "width": 84,
+                "height": 56
+            }
+        }
+    }
+}
